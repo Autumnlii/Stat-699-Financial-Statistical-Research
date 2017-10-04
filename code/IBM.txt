@@ -1,0 +1,427 @@
+>> extractIBM
+> IBM.vol11 <- garch(IBM[, 1]~1, ~garch(1,1))
+> IBM11.sigma.t <- IBM.vol11$sigma.t
+>> extractIBM
+===================================
+[zjz@zagi IBM]$ thr.e
+  Enter file name for exceedance input
+IBMdrop.txt
+  Separate file for regressor info? y/n
+n
+ Enter total length of record (min   5300)
+5300
+  Enter interval length T (0 for 365.2425)
+252.75
+  Create additional regressors? y/n
+n
+  Output of full regressor matrix? y/n
+n
+  Enter model type
+  1: Homogeneous, xi=0
+  2: Homogeneous, xi.ne.0
+  3: Mu variable, xi=0
+  4: Mu variable, xi.ne.0
+  5: Mu and sigma variable, xi=0
+  6: Mu and sigma variable, xi.ne.0
+  7: Mu, sigma and xi all variable
+2
+ Number of parameters is     3
+  Enter threshold
+.02
+ Number of exceedance is   497
+  Use automatic initial values? y/n
+y
+  Parameter values:
+    0.075035   -3.582595    0.324064
+  Standard errors:
+    0.004597    0.138072    0.051187
+ NLLH =       -2708.304
+ GPD scale parameter is      0.00996869
+  Output diagnostics? y/n
+y          
+  z correlation function
+  Enter file name for output
+IBMdropzcor
+  z time plot
+  Enter file name for output
+IBMdropztplot
+  z probability plot
+  Enter file name for output
+IBMdropzpplot
+ KS, CVM and AS statistics are      3.590     3.253    17.248
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+  w correlation function
+  Enter file name for output
+IBMdropwcor
+  w time plot
+  Enter file name for output
+IBMdropwtplot
+  w probability plot
+  Enter file name for output
+IBMdropwpplot
+ KS, CVM and AS statistics are     22.292   159.747   956.191
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+===========================================================
+[zjz@zagi IBM]$ thr.e
+  Enter file name for exceedance input
+IBMpos.txt
+  Separate file for regressor info? y/n
+n
+ Enter total length of record (min   5301)
+5301
+  Enter interval length T (0 for 365.2425)
+252.75
+  Create additional regressors? y/n
+n
+  Output of full regressor matrix? y/n
+n
+  Enter model type
+  1: Homogeneous, xi=0
+  2: Homogeneous, xi.ne.0
+  3: Mu variable, xi=0
+  4: Mu variable, xi.ne.0
+  5: Mu and sigma variable, xi=0
+  6: Mu and sigma variable, xi.ne.0
+  7: Mu, sigma and xi all variable
+2
+ Number of parameters is     3
+  Enter threshold
+.02
+ Number of exceedance is   552
+  Use automatic initial values? y/n
+y
+  Parameter values:
+    0.069793   -3.866731    0.206019
+  Standard errors:
+    0.003643    0.138154    0.052528
+ NLLH =       -3093.676
+ GPD scale parameter is      0.01066836
+  Output diagnostics? y/n
+y
+  z correlation function
+  Enter file name for output
+IBMposzcor
+  z time plot
+  Enter file name for output
+IBMposztplot
+  z probability plot
+  Enter file name for output
+IBMposzpplot
+ KS, CVM and AS statistics are      2.467     1.483     9.374
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+  w correlation function
+  Enter file name for output
+IBMposwcor
+  w time plot
+  Enter file name for output
+IBMposwtplot
+  w probability plot
+  Enter file name for output
+IBMposwpplot
+ KS, CVM and AS statistics are     23.472   186.618  1148.435
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+============================================
+[zjz@zagi IBM]$ thr.e
+  Enter file name for exceedance input
+IBMabs.txt
+  Separate file for regressor info? y/n
+n
+ Enter total length of record (min   5301)
+5301
+  Enter interval length T (0 for 365.2425)
+252.75
+  Create additional regressors? y/n
+n
+  Output of full regressor matrix? y/n
+n
+  Enter model type
+  1: Homogeneous, xi=0
+  2: Homogeneous, xi.ne.0
+  3: Mu variable, xi=0
+  4: Mu variable, xi.ne.0
+  5: Mu and sigma variable, xi=0
+  6: Mu and sigma variable, xi.ne.0
+  7: Mu, sigma and xi all variable
+2
+ Number of parameters is     3
+  Enter threshold
+.02
+ Number of exceedance is  1049
+  Use automatic initial values? y/n
+y
+  Parameter values:
+    0.091708   -3.509350    0.274801
+  Standard errors:
+    0.004488    0.109278    0.032946
+ NLLH =       -6526.250
+ GPD scale parameter is      0.01021081
+  Output diagnostics? y/n
+y
+  z correlation function
+  Enter file name for output
+IBMabszcor
+  z time plot
+  Enter file name for output
+IBMabsztplot
+  z probability plot
+  Enter file name for output
+IBMabszpplot
+ KS, CVM and AS statistics are      5.812     6.582    41.590
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+  w correlation function
+  Enter file name for output
+IBMabswcor
+  w time plot
+  Enter file name for output
+IBMabswtplot
+  w probability plot
+  Enter file name for output
+IBMabswpplot
+ KS, CVM and AS statistics are     32.388   345.761  2095.488
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+=====================================================
+[zjz@zagi IBM]$ thr.e
+  Enter file name for exceedance input
+IBMsdrop.txt    
+  Separate file for regressor info? y/n
+n
+ Enter total length of record (min   5300)
+5300     
+  Enter interval length T (0 for 365.2425)
+252.75
+  Create additional regressors? y/n
+n
+  Output of full regressor matrix? y/n
+n
+  Enter model type
+  1: Homogeneous, xi=0
+  2: Homogeneous, xi.ne.0
+  3: Mu variable, xi=0
+  4: Mu variable, xi.ne.0
+  5: Mu and sigma variable, xi=0
+  6: Mu and sigma variable, xi.ne.0
+  7: Mu, sigma and xi all variable
+2
+ Number of parameters is     3
+  Enter threshold
+1.2
+ Number of exceedance is   373
+  Use automatic initial values? y/n
+y
+  Parameter values:
+    3.495832    0.238644    0.352523
+  Standard errors:
+    0.215888    0.155656    0.058822
+ NLLH =        -485.684
+ GPD scale parameter is      0.46019238
+  Output diagnostics? y/n
+y
+  z correlation function
+  Enter file name for output
+IBMsdropzcor
+  z time plot
+  Enter file name for output
+IBMsdropztplot
+  z probability plot
+  Enter file name for output
+IBMsdropzpplot
+ KS, CVM and AS statistics are      1.313     0.167     1.622
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+  w correlation function
+  Enter file name for output
+IBMsdropwcor
+  w time plot
+  Enter file name for output
+IBMsdropwtplot
+  w probability plot
+  Enter file name for output
+IBMsdropwpplot
+ KS, CVM and AS statistics are     19.310   120.961   735.456
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+============================================================
+[zjz@zagi IBM]$ thr.e
+  Enter file name for exceedance input
+IBMspos.txt
+  Separate file for regressor info? y/n
+n
+ Enter total length of record (min   5301)
+5301
+  Enter interval length T (0 for 365.2425)
+252.75
+  Create additional regressors? y/n
+n
+  Output of full regressor matrix? y/n
+n
+  Enter model type
+  1: Homogeneous, xi=0
+  2: Homogeneous, xi.ne.0
+  3: Mu variable, xi=0
+  4: Mu variable, xi.ne.0
+  5: Mu and sigma variable, xi=0
+  6: Mu and sigma variable, xi.ne.0
+  7: Mu, sigma and xi all variable
+2
+ Number of parameters is     3
+  Enter threshold
+1.2
+ Number of exceedance is   435
+  Use automatic initial values? y/n
+y
+  Parameter values:
+    3.028965   -0.257900    0.170664
+  Standard errors:
+    0.134292    0.131709    0.054472
+ NLLH =        -712.014
+ GPD scale parameter is      0.46053351
+  Output diagnostics? y/n
+y
+  z correlation function
+  Enter file name for output
+IBMsposzcor
+  z time plot
+  Enter file name for output
+IBMsposztplot
+  z probability plot
+  Enter file name for output
+IBMsposzpplot
+ KS, CVM and AS statistics are      1.665     0.545     4.057
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+  w correlation function
+  Enter file name for output
+IBMsposwcor
+  w time plot
+  Enter file name for output
+IBMsposwtplot
+  w probability plot
+  Enter file name for output
+IBMsposwpplot
+ KS, CVM and AS statistics are     20.830   141.062   840.327
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+======================================================
+[zjz@zagi IBM]$ thr.e
+  Enter file name for exceedance input
+IBMsabs.txt
+  Separate file for regressor info? y/n
+n
+ Enter total length of record (min   5301)
+5301
+  Enter interval length T (0 for 365.2425)
+252.75
+  Create additional regressors? y/n
+n
+  Output of full regressor matrix? y/n
+n
+  Enter model type
+  1: Homogeneous, xi=0
+  2: Homogeneous, xi.ne.0
+  3: Mu variable, xi=0
+  4: Mu variable, xi.ne.0
+  5: Mu and sigma variable, xi=0
+  6: Mu and sigma variable, xi.ne.0
+  7: Mu, sigma and xi all variable
+2
+ Number of parameters is     3
+  Enter threshold
+1.2
+ Number of exceedance is   808
+  Use automatic initial values? y/n
+y
+  Parameter values:
+    4.050435    0.213404    0.275403
+  Standard errors:
+    0.207822    0.126446    0.040582
+ NLLH =       -1751.728
+ GPD scale parameter is      0.45286677
+  Output diagnostics? y/n
+y
+  z correlation function
+  Enter file name for output
+IBMsabszcor
+  z time plot
+  Enter file name for output
+IBMsabsztplot
+  z probability plot
+  Enter file name for output
+IBMsabszpplot
+ KS, CVM and AS statistics are      4.018     2.248    16.461
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+  w correlation function
+  Enter file name for output
+IBMsabswcor
+  w time plot
+  Enter file name for output
+IBMsabswtplot
+  w probability plot
+  Enter file name for output
+IBMsabswpplot
+ KS, CVM and AS statistics are     28.425   261.192  1566.829
+ 5% upper probability points        1.358     0.461     2.492
+ 1% upper probability points        1.628     0.743     3.857
+ 0.1% upper probability points      1.950     1.167     6.000
+========================================================
+>  source('IBMoriwplot.i')
+>  source('IBMorizplot.i')
+>  source('IBMstdzplot.i')
+>  source('IBMstdwplot.i')
+>  source('IBMabswplot.i')
+>  source('IBMabszplot.i')
+====================================
+>> IBMMeanplot
+>> print -deps IBMorimeanplot.eps
+>> IBMstdMeanplot
+>> print -deps IBMstdmeanplot.eps
+============================================
+>> IBMneg2Frechet
+Input the threshold value of u =.02
+Input the estimated value of mu =0.075035
+Input the estimated value of log psi =-3.582595
+Input the estimated value of xi =0.324064
+>> IBMpos2Frechet
+Input the threshold value of u =.02
+Input the estimated value of mu =0.069793
+Input the estimated value of log psi =-3.866731
+Input the estimated value of xi =0.206019
+>> IBMabs2Frechet
+Input the threshold value of u =.02
+Input the estimated value of mu =0.091708
+Input the estimated value of log psi =-3.509350
+Input the estimated value of xi =0.274801
+>> IBMsneg2Frechet
+Input the estimated value of mu =3.495832
+Input the estimated value of log psi =0.238644
+Input the estimated value of xi =0.352523
+>> IBMspos2Frechet
+Input the estimated value of mu =3.028965
+Input the estimated value of log psi =-0.257900
+Input the estimated value of xi =0.170664
+>> IBMsabs2Frechet
+Input the threshold value of u =1.2
+Input the estimated value of mu =4.050435
+Input the estimated value of log psi =0.213404
+Input the estimated value of xi =0.275403
+===================================================
+>> IBMFrechetPlot
+>> print -deps IBMFrechetPlot.eps
+=================================
